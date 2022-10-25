@@ -1,0 +1,35 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../img/background.gif);
+    background-size: cover;
+}
+
+.contaner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    height: 700px;
+    width: 650px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    
+}
+
+.contaner textarea{
+    margin: 10px;
+    resize: none;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100px;
+    width: 80%;
+}
