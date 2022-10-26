@@ -10,7 +10,7 @@
 <body>
     <main class="contaner">
         <label for="box-crypt">Escreva aqui sua mensagem:</label>
-        <textarea name="box-crypt" id="" cols="30" rows="10"></textarea>
+        <textarea name="box-crypt" id="msgStarting" cols="30" rows="10"></textarea>
 
         <select name="" id="">
             <option value="">Escolha uma Criptografia</option>
@@ -18,8 +18,12 @@
             <option value="">Cifra de Cesar</option>
         </select>
 
-        <input type="radio">
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <div class="optCode">
+            <label for=""><input name="type-crypt" type="radio" id="crypt" value="coding">Criptografar</label>
+            <label for=""><input name="type-crypt" type="radio" id="decrypt" value="decoding">Descriptografar</label>
+            <input type="button" id="btn">
+        </div>
+        <textarea name="" id="msgEnding" cols="30" rows="10"></textarea>
     </main>
     <script src="js/script.js"></script>
 </body>
