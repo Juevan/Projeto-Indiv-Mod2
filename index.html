@@ -9,21 +9,27 @@
 </head>
 <body>
     <main class="contaner">
-        <label for="box-crypt">Escreva aqui sua mensagem:</label>
-        <textarea name="box-crypt" id="msgStarting" cols="30" rows="10"></textarea>
+        <label for="mensagem">Escreva aqui sua mensagem:</label>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
 
-        <select name="" id="">
+        <select name="codigo" id="codigo">
             <option value="">Escolha uma Criptografia</option>
-            <option value="">Base64</option>
-            <option value="">Cifra de Cesar</option>
+            <option value="base64">Base64</option>
+            <option value="cesar">Cifra de Cesar</option>
         </select>
 
-        <div class="optCode">
-            <label for=""><input name="type-crypt" type="radio" id="crypt" value="coding">Criptografar</label>
-            <label for=""><input name="type-crypt" type="radio" id="decrypt" value="decoding">Descriptografar</label>
-            <input type="button" id="btn">
+        <div class="divChave">
+            <label for="chave">Escolha o incremento:</label>
+            <input type="number" id="chave" value="1" min="0" max="25" >
         </div>
-        <textarea name="" id="msgEnding" cols="30" rows="10"></textarea>
+
+        <div>
+            <label for="codificar"><input type="radio" name="cod" class="radio" id="cod">Criptografar</label>
+            <label for="decodificar"><input type="radio" name="cod" class="radio" id="decod">Descriptografar</label>
+            <div class="botaoResultado" id="botaoResultado"></div>
+        </div>
+        <label for="resultado">Resultado:</label>
+        <textarea name="Resultado" id="resultado" cols="30" rows="10"></textarea>
     </main>
     <script src="js/script.js"></script>
 </body>

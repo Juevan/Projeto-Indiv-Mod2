@@ -36,7 +36,7 @@ body{
 
 section{
     display: flex;
-    flex-direction: row;
+    margin: 10px;
 }
 
 section option{
@@ -44,5 +44,14 @@ section option{
 }
 
 section input{
+    margin: 10px;
+}
+.divChave{
+    display: none;
+    margin: 10px;
+}
+.botaoResultado{
+    display: flex;
+    justify-content: center;
     margin: 10px;
 }
